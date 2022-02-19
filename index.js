@@ -28,8 +28,19 @@ document.getElementById("final").onclick = function () {
     let a = 1;
     for (let i = 1; i <= type3El; i++){
         a *= i;
-        return a;
+        
     }
     document.getElementById("final").innerHTML= `Giai thừa của ${type3El} là : ${a}`
+}
+// Bài 4
+document.getElementById('btnDiv').onclick = function () {
+    for (let index = 1; index <= 10; index++) {
+        let div = document.createElement('div');
+        div.className = 'alert bg-primary';
+        document.getElementById('content').appendChild(div);
+        if (index % 2 === 0) {
+            div.className = 'alert bg-danger';
+        }
+    }
 }
 
